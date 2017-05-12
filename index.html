@@ -11,30 +11,30 @@
         
         <title>Pig Game</title>
         <script>
-  $( function() {
-    $( "#dialog" ).dialog({
-      autoOpen: false,
-      show: {
-        effect: "blind",
-        duration: 1000
-      },
-      hide: {
-        effect: "explode",
-        duration: 1000
-      }
-    });
- 
-    $( "#opener" ).on( "click", function() {
-      $( "#dialog" ).dialog( "open" );
-    });
-  } );
-  </script>
+          $( function() {
+            $( "#dialog" ).dialog({
+              autoOpen: false,
+              show: {
+                effect: "blind",
+                duration: 1000
+              },
+              hide: {
+                effect: "explode",
+                duration: 1000
+              }
+            });
+         
+            $( "#opener" ).on( "click", function() {
+              $( "#dialog" ).dialog( "open" );
+            });
+          } );
+        </script>
     </head>
 <div id="dialog" title="Basic dialog">
-  <p>Set the max score, and roll the dice! Save your score by pressing the hold button</p>
+  <p>Roll the dice and try to meet your set high score!</p>
 </div>
  
-<button id="opener">Explain Rules</button>
+<button id="opener">Rules</button>
     <body>
         <div class="wrapper clearfix">
             <div class="player-0-panel active">
